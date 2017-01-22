@@ -1,0 +1,25 @@
+{
+  "name": "cheprasov/php-extra-mocks",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "http://github.com/cheprasov/php-extra-mocks",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Cheprasov",
+      "email": "cheprasov.84@ya.ru"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "ExtraMocks\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*"
+  }
+}
