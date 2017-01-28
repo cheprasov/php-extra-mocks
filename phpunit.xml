@@ -19,6 +19,9 @@
     beStrictAboutTestSize               = "true"
 >
     <testsuites>
+        <testsuite name="Build Tests">
+            <directory suffix="Test.php" >./tests/Build/</directory>
+        </testsuite>
         <testsuite name="Unit Tests">
             <directory suffix="Test.php" >./tests/Unit/</directory>
         </testsuite>

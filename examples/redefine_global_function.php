@@ -1,18 +1,14 @@
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-# ExtraMocks v1.0.0 for PHP >= 5.5
+<?php
+/**
+ * This file is part of RedisClient.
+ * git: https://github.com/cheprasov/php-extra-mocks
+ *
+ * (C) Alexander Cheprasov <cheprasov.84@ya.ru>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
-## About
-
-ExtraMocks are a tools that give extra functionality for Mocks.
-
-## Main features
-- Allow to redefine global function in namespaces.
-
-## Usage
-
-## Examples
-
-```php
 namespace A;
 
 class A
@@ -22,9 +18,7 @@ class A
         return strlen($str);
     }
 }
-```
 
-```php
 namespace B;
 
 class B {
@@ -34,9 +28,7 @@ class B {
         return strlen($str);
     }
 }
-```
 
-```php
 namespace Example;
 
 require (__DIR__ . '/../src/autoloader.php');
@@ -79,26 +71,3 @@ echo \A\A::string_length('foo') . PHP_EOL;        // 42;
 echo Mocks::getCountCalls('\A\strlen') . PHP_EOL; // 1
 echo \A\A::string_length('foo') . PHP_EOL;        // 42;
 echo Mocks::getCountCalls('\A\strlen') . PHP_EOL; // 2
-```
-
-## Installation
-
-### Composer
-
-Download composer:
-
-    wget -nc http://getcomposer.org/composer.phar
-
-and add dependency to your project:
-
-    php composer.phar require cheprasov/php-extra-mocks
-
-## Running tests
-
-3. To run tests type in console:
-
-    ./vendor/bin/phpunit
-
-## Something doesn't work
-
-Feel free to fork project, fix bugs and finally request for pull
