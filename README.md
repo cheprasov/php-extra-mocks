@@ -10,10 +10,6 @@ ExtraMocks are a tools that give extra functionality for Mocks.
 
 ## Usage
 
-1. Mock global function
-
-\ExtraMocks\Mocks::mockGlobalFunction($fullName, $result, $count = null)
-
 #### \ExtraMocks\Mocks :: mockGlobalFunction ( `string` **$fullName** , `mixed|callable` **$result** [, `int|null` **$count** = null ] )
 ---
 Redefine global function.
@@ -23,6 +19,7 @@ Redefine global function.
 1. string **$fullName** - name with namespace of function for redefine
 2. mixed|callable **$result** - new function or result
 3. int|null **$count**, default = null. Count of mocked calls
+
 
 #### \ExtraMocks\Mocks :: getCountCalls ( `string` **$fullName** )
 ---
