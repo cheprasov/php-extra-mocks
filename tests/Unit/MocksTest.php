@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of RedisClient.
+ * This file is part of ExtraMocks.
  * git: https://github.com/cheprasov/php-extra-mocks
  *
  * (C) Alexander Cheprasov <cheprasov.84@ya.ru>
